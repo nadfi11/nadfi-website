@@ -1,159 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NADFI | Know. Create. Act. Protect.</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Georgia, serif;
-            background-color: #f5f1e7;
-            color: #173d2b;
-        }
-
-        header {
-            background-color: #173d2b;
-            color: #f5f1e7;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 17px;
-            letter-spacing: 3px;
-        }
-
-        nav {
-            background-color: #284c38;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-family: Arial, sans-serif;
-        }
-
-        nav a:hover {
-            color: #d9bd8b;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 24px;
-        }
-
-        .hero {
-            padding: 45px 0;
-        }
-
-        .hero h2 {
-            font-size: 38px;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-family: Arial, sans-serif;
-            font-size: 17px;
-            line-height: 1.8;
-            color: #526254;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #173d2b;
-            color: white;
-            padding: 14px 24px;
-            text-decoration: none;
-            margin-top: 15px;
-        }
-
-        .about {
-            border-top: 1px solid #c9c3b3;
-            padding: 35px 0;
-        }
-
-        footer {
-            background-color: #173d2b;
-            color: #f5f1e7;
-            text-align: center;
-            padding: 25px;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173d2b">
+<title>NADFI | Know. Create. Act. Protect.</title>
+<meta name="description" content="NADFI inspires awareness, creativity and meaningful action for nature and wildlife.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#173d2b;--deep:#102c20;--leaf:#567653;--sage:#dce5d4;--cream:#f5f1e7;--paper:#fffdf7;--earth:#b9784f;--ink:#20362b;--muted:#657267;--line:#dfe3d8;--shadow:0 18px 50px #102c201f}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 "DM Sans",sans-serif}a{color:inherit}header{position:sticky;top:0;z-index:10;background:#f5f1e7f5;backdrop-filter:blur(12px);border-bottom:1px solid #173d2b20}.announcement{background:var(--deep);color:#e8eadf;text-align:center;padding:8px;font-size:.75rem;letter-spacing:.12em}.nav-wrap{max-width:1180px;margin:auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--forest);font-weight:700;letter-spacing:.08em}.brand-mark{width:42px;height:42px;border-radius:50% 50% 50% 8px;background:var(--forest);color:var(--cream);display:grid;place-items:center;font:1.1rem "Playfair Display",serif}.brand small{display:block;font-size:.6rem;letter-spacing:.14em;color:var(--muted)}nav{display:flex;gap:17px;align-items:center}nav a{text-decoration:none;font-size:.81rem;font-weight:600}nav a:hover,.text-link:hover{color:var(--earth)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--forest);background:var(--forest);color:var(--paper);padding:11px 17px;border-radius:3px;font:600 .88rem "DM Sans",sans-serif;cursor:pointer}.button:hover,.nav-cta:hover{background:var(--deep);transform:translateY(-2px)}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);color:var(--forest);font-size:1.3rem;padding:4px 10px}
+.hero{min-height:590px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#092317df,#0923178c 48%,#09231712),url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2000&q=85") center/cover}.hero-inner{max-width:1180px;width:100%;margin:auto;padding:90px 24px}.eyebrow{font-size:.74rem;text-transform:uppercase;letter-spacing:.18em;font-weight:700}.hero .eyebrow{color:#e3c49f}h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.13}h1{font-size:clamp(2.8rem,6vw,5.4rem);max-width:730px;margin:20px 0}h2{font-size:clamp(2rem,4vw,3.35rem);color:var(--forest);margin:12px 0 18px}h3{color:var(--forest)}.hero p{max-width:560px;color:#f0f0e8;font-size:1.05rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button.light{background:var(--cream);color:var(--forest);border-color:var(--cream)}.button.outline{background:transparent;border-color:#ffffffb8}.hero-note{margin-top:42px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#e1e7da}.ticker{background:var(--forest);color:var(--cream);text-align:center;padding:14px;letter-spacing:.13em;font-family:"Playfair Display",serif}
+section{padding:82px 24px}.container{max-width:1120px;margin:auto}.section-head{max-width:700px;margin-bottom:34px}.section-head .eyebrow{color:var(--leaf)}.lead{font-size:1.06rem;color:var(--muted)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.calligraphy{font:clamp(3.2rem,6vw,5rem)/1.05 "Great Vibes",cursive;color:var(--leaf);margin:0 0 8px}.about-photo{min-height:440px;position:relative;background:url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1100&q=85") center/cover;box-shadow:var(--shadow)}.photo-note{position:absolute;bottom:18px;left:18px;max-width:230px;background:var(--paper);padding:14px;color:var(--forest);font-family:"Playfair Display",serif}.motto{background:var(--sage);text-align:center;padding:68px 24px}.motto-words{display:flex;justify-content:center;flex-wrap:wrap;margin-top:25px}.motto-words span{font:clamp(1.25rem,2.5vw,1.8rem) "Playfair Display",serif;padding:5px 22px;border-right:1px solid #b6c7b0;color:var(--forest)}.motto-words span:last-child{border:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:var(--paper);border:1px solid var(--line);overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card-image{height:200px;background-size:cover;background-position:center}.card-body{padding:23px}.tag{font-size:.69rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--leaf)}.card h3{font-size:1.4rem;margin:9px 0}.card p{font-size:.91rem;color:var(--muted)}.text-link{font-size:.88rem;font-weight:700;color:var(--forest);text-decoration:none;border-bottom:1px solid #9aac96;padding-bottom:3px}.news{background:#ebe9dd}.news-note{font-size:.8rem;color:var(--muted);margin-top:18px}.help-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px}.help-list{display:grid;grid-template-columns:1fr 1fr;gap:13px}.help-item{background:var(--paper);border:1px solid var(--line);padding:18px}.number{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--sage);color:var(--forest);font-size:.8rem;font-weight:700;margin-bottom:10px}.help-item b{display:block;font:1.12rem "Playfair Display",serif;color:var(--forest);margin-bottom:5px}.help-item p{font-size:.84rem;color:var(--muted);margin:0}.contact-box{background:var(--paper);border:1px solid var(--line);padding:20px;margin-top:24px;font-size:.9rem}.contact-box p{margin:0}.game-section{background:var(--forest);color:var(--cream)}.game-section h2{color:var(--cream)}.game-section .eyebrow{color:#d9b58e}.game-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center}.game-art{min-height:315px;background:url("https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85") center/cover}.quiz-box{background:var(--paper);color:var(--ink);padding:26px}.quiz-progress{font-size:.73rem;color:var(--leaf);font-weight:700;text-transform:uppercase;letter-spacing:.1em}.quiz-box h3{font-size:1.55rem;margin:12px 0 18px}.answers{display:grid;gap:9px}.answer{background:#f6f4ec;border:1px solid var(--line);padding:12px;text-align:left;font:500 .9rem "DM Sans",sans-serif;cursor:pointer}.answer:hover:not(:disabled){border-color:var(--leaf);background:var(--sage)}.answer:disabled{cursor:default}.answer.correct{background:#dcebd7;border-color:var(--leaf)}.answer.wrong{background:#f4ded6;border-color:var(--earth)}.quiz-feedback{min-height:28px;margin:12px 0;color:var(--forest);font-weight:600;font-size:.88rem}.quiz-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.quiz-footer .button{font-size:.8rem;padding:9px 13px}.score{font-weight:700;color:var(--forest)}.join-banner{background:var(--sage);text-align:center}.join-banner .container{max-width:760px}.join-banner p{color:var(--muted)}footer{background:var(--deep);color:#e5e8df;padding:32px 24px}.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-brand{font:1.25rem "Playfair Display",serif}.footer-inner p{font-size:.8rem;color:#bdc9bd;margin:5px 0 0}.footer-links{display:flex;gap:15px;flex-wrap:wrap}.footer-links a{font-size:.8rem;text-decoration:none}
+@media(max-width:950px){nav{gap:10px}nav a{font-size:.74rem}.nav-cta{font-size:.78rem;padding:9px}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.nav-wrap{padding:10px 16px}.menu-toggle{display:block}nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);padding:18px 22px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:12px}nav.open{display:flex}nav a{font-size:.95rem;padding:4px}.nav-cta{display:none}.hero{min-height:540px;background-position:58% center}.hero-inner{padding:70px 21px}section{padding:62px 20px}.about-grid,.help-grid,.game-layout{grid-template-columns:1fr;gap:28px}.about-photo{min-height:320px;order:-1}.cards{grid-template-columns:1fr}.card-image{height:220px}.game-art{min-height:230px}.motto-words span{padding:5px 12px}.footer-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:420px){.help-list{grid-template-columns:1fr}.quiz-box{padding:19px}.motto-words span{font-size:1.1rem}}
+</style>
 </head>
-
 <body>
-
-    <header>
-        <h1>NADFI</h1>
-        <p>KNOW. CREATE. ACT. PROTECT.</p>
-        <div>Nature and Animal Development Federation Initiative</div>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#mission">Our Mission</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
-        <section class="hero" id="home">
-            <p>OUR PLANET. OUR RESPONSIBILITY.</p>
-            <h2>A better future for nature starts with us.</h2>
-            <p>
-                We are building awareness, encouraging creativity,
-                and inspiring meaningful action for nature and wildlife.
-                Every small step can help create a better world.
-            </p>
-            <a class="button" href="#mission">Discover Our Mission</a>
-        </section>
-
-        <section class="about" id="about">
-            <h2>Who We Are</h2>
-            <p>
-                NADFI is an initiative dedicated to nature, wildlife,
-                awareness, creativity, and environmental responsibility.
-                We believe that knowledge inspires action and that
-                everyone can contribute to protecting our planet.
-            </p>
-        </section>
-
-        <section class="about" id="mission">
-            <h2>Our Mission</h2>
-            <p><strong>KNOW.</strong> Learn about nature and wildlife.</p>
-            <p><strong>CREATE.</strong> Turn ideas into awareness.</p>
-            <p><strong>ACT.</strong> Take meaningful steps for our planet.</p>
-            <p><strong>PROTECT.</strong> Help safeguard the natural world.</p>
-        </section>
-
-        <section class="about" id="contact">
-            <h2>Be Part of the Change</h2>
-            <p>
-                A better future begins when people choose to care
-                and take action.
-            </p>
-            <p>Know. Create. Act. Protect.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>NADFI · For Nature. For Wildlife. For Our Future.</p>
-    </footer>
-
-</body>
-</html>
-```
+<div class="announcement">KNOW. CREATE. ACT. PROTECT. &nbsp;·&nbsp; SMALL ACTIONS CAN MAKE A DIFFERENCE</div>
+<header><div class="nav-wrap">
+<a class="brand" href="#home"><span class="brand-mark">N</span><span>NADFI<small>NATURE & WILDLIFE</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav id="mainNav" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About Us</a><a href="#motto">Our Motto</a><a href="#news">News</a><a href="#articles">Articles</a><a href="#help">How to Help</a><a href="#game">Play the Game</a></nav>
+<a class="nav-cta" href="#help">Join the Movement ↗</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner"><div class="eyebrow">A voice for the natural world</div><h1>A better future for nature starts with us.</h1><p>We are building awareness, encouraging creativity, and inspiring meaningful action for nature and wildlife. Every small step can help create a better world.</p><div class="hero-actions"><a class="button light" href="#about">Discover Our Mission</a><a class="button outline" href="#game">Play & Learn ↓</a></div><div class="hero-note">For wildlife · For habitats · For tomorrow</div></div></section>
+<div class="ticker">OUR PLANET. OUR RESPONSIBILITY.</div>
+<section id="about"><div class="container about-grid"><div><p class="calligraphy">About Us</p><div class="eyebrow">Who we are</div><h2>Curiosity can become change.</h2><p class="lead">NADFI — Nature and Animal Development Federation Initiative — is a youth-led initiative built around learning, creativity, awareness, and care for the natural world.</p><p>We want to make nature and wildlife easier to understand and harder to ignore. Through creative projects, informative content, and small practical actions, we hope to inspire more people to care for the planet we share.</p><a class="text-link" href="#help">Explore ways to take action →</a></div><div class="about-photo" role="img" aria-label="Sunlight filtering through a green forest"><div class="photo-note">Protecting nature begins with understanding it.</div></div></div></section>
+<section class="motto" id="motto"><div class="container"><div class="eyebrow">Our guiding promise</div><h2>Four words. One purpose.</h2><p class="lead">The values behind everything we create.</p><div class="motto-words"><span>Know.</span><span>Create.</span><span>Act.</span><span>Protect.</span></div></div></section>
+<section id="news" class="news"><div class="container"><div class="section-head"><div class="eyebrow">Stay curious</div><h2>Nature & wildlife news</h2><p class="lead">Follow conservation reporting and discoveries from organisations working to understand and protect our planet.</p></div><div class="cards">
+<article class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Tiger in the wild"></div><div class="card-body"><span class="tag">Wildlife</span><h3>Stories from the wild</h3><p>Explore conservation updates, species stories, and wildlife protection work.</p><a class="text-link" href="https://www.worldwildlife.org/stories" target="_blank" rel="noopener noreferrer">Read WWF stories ↗</a></div></article>
+<article class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Green forest"></div><div class="card-body"><span class="tag">Environment</span><h3>Our changing planet</h3><p>Learn about forests, climate, biodiversity, and choices shaping our future.</p><a class="text-link" href="https://www.unep.org/news-and-stories" target="_blank" rel="noopener noreferrer">Read UNEP news ↗</a></div></article>
+<article class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Deer in a natural habitat"></div><div class="card-body"><span class="tag">Biodiversity</span><h3>Why every species matters</h3><p>Discover research and explainers about the living world and its habitats.</p><a class="text-link" href="https://www.iucn.org/news" target="_blank" rel="noopener noreferrer">Explore IUCN updates ↗</a></div></article></div><p class="news-note">External links open established conservation organisations. Check each publisher for the latest reporting and dates.</p></div></section>
+<section id="articles"><div class="container"><div class="section-head"><div class="eyebrow">Ideas worth sharing</div><h2>Articles & field notes</h2><p class="lead">A space for NADFI explainers, student writing, nature observations, and research-backed stories.</p></div><div class="cards">
+<article class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Forest path"></div><div class="card-body"><span class="tag">Starter topic</span><h3>A forest is more than trees</h3><p>Explore how forests provide habitat, store carbon, protect soil, and support communities.</p><a class="text-link" href="https://www.worldwildlife.org/habitats/forest-habitat" target="_blank" rel="noopener noreferrer">Explore forest habitats ↗</a></div></article>
+<article class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Elephant in its habitat"></div><div class="card-body"><span class="tag">Starter topic</span><h3>Living alongside wildlife</h3><p>Understand why healthy habitats and respectful distance matter for wild animals.</p><a class="text-link" href="https://www.worldwildlife.org/" target="_blank" rel="noopener noreferrer">Learn from WWF ↗</a></div></article>
+<article class="card"><div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=800&q=80')" role="img" aria-label="Green leaves in sunlight"></div><div class="card-body"><span class="tag">Write for NADFI</span><h3>Your nature story belongs here</h3><p>Have an article, illustration, or observation? Ask the NADFI team about contributing.</p><a class="text-link" href="#help">How to get involved →</a></div></article></div><p class="news-note">These are introductory topics and external learning links, not original NADFI research. Add your own reviewed articles as they are ready.</p></div></section>
+<section id="help"><div class="container help-grid"><div><div class="eyebrow">Small steps. Real care.</div><h2>How can you help?</h2><p class="lead">You don’t have to do everything. Start with one thoughtful action and help it grow.</p><p>Choose safe, practical ways to support nature. Respect wildlife from a distance, follow local rules, and work with trusted adults or established organisations for community activities.</p><a class="button" href="#game">Test your nature knowledge</a></div><div class="help-list">
+<div class="help-item"><span class="number">01</span><b>Reduce waste</b><p>Carry reusable items and sort waste where facilities are available.</p></div><div class="help-item"><span class="number">02</span><b>Respect wildlife</b><p>Never feed, chase, touch, or disturb wild animals. Observe from a distance.</p></div><div class="help-item"><span class="number">03</span><b>Share knowledge</b><p>Share reliable nature facts and check sources before reposting claims.</p></div><div class="help-item"><span class="number">04</span><b>Care for habitats</b><p>Join supervised clean-ups or planting projects using locally appropriate plants.</p></div><div class="help-item"><span class="number">05</span><b>Choose wisely</b><p>Avoid products made from threatened wildlife and support responsible choices.</p></div><div class="help-item"><span class="number">06</span><b>Create for change</b><p>Make a poster, write an article, or create art that inspires care for nature.</p></div>
+</div></div><div class="container contact-box"><p><strong>Want to contribute to NADFI?</strong> Prepare your idea, article, artwork, or volunteering suggestion and share it with the team through a contact method approved by a trusted adult. Avoid publishing personal phone numbers, home addresses, or private school details on this public site.</p></div></section>
+<section id="game" class="game-section"><div class="container"><div class="section-head"><div class="eyebrow">Learn by playing</div><h2>Save Animals & Nature</h2><p class="lead" style="color:#d4dfd3">Make nature-friendly choices, collect points, and see how much you know. Every question is a chance to learn.</p></div><div class="game-layout"><div class="game-art" role="img" aria-label="Elephant in a natural green habitat"></div><div class="quiz-box" aria-live="polite"><div class="quiz-progress" id="quizProgress">Question 1 of 5</div><h3 id="questionText"></h3><div class="answers" id="answers"></div><div class="quiz-feedback" id="feedback"></div><div class="quiz-footer"><span class="score" id="score">🌿 Score: 0</span><button class="button" id="nextButton" type="button" disabled>Next question →</button></div></div></div></div></section>
+<section class="join-banner"><div class="container"><div class="eyebrow">The future is shared</div><h2>Be part of the change.</h2><p>Learn something new. Create something meaningful. Take one small action. Help protect the natural world we all depend on.</p><a class="button" href="#about">Discover NADFI</a></div></section>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-brand">NADFI <span style="color:#d9b58e">✳</span></div><p>Know. Create. Act. Protect.</p><p>© <span id="year"></span> NADFI. Learn, care, and act responsibly.</p></div><div class="footer-links"><a href="#about">About Us</a><a href="#news">News</a><a href="#articles">Articles</a><a href="#help">How to Help</a><a href="#game">Game</a><a href="#home">Back to top ↑</a></div></div></footer>
+<script>
+const menuToggle=document.getElementById('menuToggle'),mainNav=document.getElementById('mainNav');
+menuToggle.addEventListener('click',()=>{const open=mainNav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰'});
+mainNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mainNav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const quiz=[
+{q:'What should you do if you see a wild animal nearby?',a:['Move closer for a selfie','Stay calm and observe from a safe distance','Offer it some snacks'],c:1,why:'Correct! Giving wildlife space helps keep people and animals safe.'},
+{q:'Which choice can help reduce plastic waste?',a:['Use a reusable water bottle','Leave litter for someone else','Use a new disposable bag every time'],c:0,why:'Yes! Reusables can help reduce single-use waste.'},
+{q:'Why are forests important?',a:['They are only useful for timber','They provide habitat and support many living things','They should have no animals'],c:1,why:'Exactly. Forests support biodiversity, protect soil, and help regulate the climate.'},
+{q:'What should you do before sharing a shocking wildlife claim online?',a:['Share it immediately','Check reliable sources first','Make the headline scarier'],c:1,why:'Great choice. Checking trustworthy sources helps prevent misinformation.'},
+{q:'How can you help a wild animal that seems injured?',a:['Pick it up yourself','Crowd around it','Keep your distance and contact a trusted adult or local wildlife rescue service'],c:2,why:'Right. Trained responders can advise safely.'}
+];
+let current=0,score=0,answered=false;
+const qText=document.getElementById('questionText'),answers=document.getElementById('answers'),feedback=document.getElementById('feedback'),progress=document.getElementById('quizProgress'),scoreLabel=document.getElementById('score'),next=document.getElementById('nextButton');
+function render(){answered=false;const item=quiz[current];progress.textContent=`Question ${current+1} of ${quiz.length}`;qText.textContent=item.q;feedback.textContent='';answers.innerHTML='';item.a.forEach((answer,i)=>{const b=document.createElement('button');b.type='button';b.className='answer';b.textContent=answer;b.addEventListener('click',()=>choose(i));answers.appendChild(b)});next.disabled=true;next.textContent=current===quiz.length-1?'See results →':'Next question →';scoreLabel.textContent=`🌿 Score: ${score}`}
+function choose(i){if(answered)return;answered=true;const item=quiz[current];[...answers.children].forEach((b,j)=>{b.disabled=true;if(j===item.c)b.classList.add('correct');if(j===i&&i!==item.c)b.classList.add('wrong')});if(i===item.c)score++;feedback.textContent=(i===item.c?'✓ ':'Not quite. ')+item.why;scoreLabel.textContent=`🌿 Score: ${score}`;next.disabled=false}
+next.addEventListener('click',()=>{if(!answered)return;if(current<quiz.length-1){current++;render()}else{progress.textContent='Challenge complete!';qText.textContent=score===quiz.length?'Nature champion! 🌿':score>=3?'A thoughtful nature protector! 🌱':'Every expert starts by learning! 🍃';answers.innerHTML='';feedback.textContent=`You scored ${score} out of ${quiz.length}. Try again to learn even more.`;scoreLabel.textContent=`🌿 Final score: ${score}/${quiz.length}`;next.textContent='Play again ↻';next.disabled=false;next.onclick=()=>{current=0;score=0;next.onclick=null;render()}}});
+render();
+</script>
+</body></html>
